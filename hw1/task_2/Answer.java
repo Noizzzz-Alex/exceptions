@@ -1,4 +1,4 @@
-package HW_1.task_2;
+package hw1.task_2;
 
 class Answer {
     public int[] subArrays(int[] a, int[] b) {

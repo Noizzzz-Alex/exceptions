@@ -1,4 +1,4 @@
-package HW_1.task_1;
+package hw1.task_1;
 
 public class Printer {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package HW_1.task_3;
+package hw1.task_3;
 
 /*
 Частное двух массивов
