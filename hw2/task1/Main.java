@@ -11,7 +11,7 @@ import java.util.Scanner;
 программа должна выводить сообщение "Число корректно".
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidIdNumberException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter positive number :");
         int x = scanner.nextInt();
