@@ -1,4 +1,4 @@
-package hw2.task3not;
+package hw2.task3;
 
 public class CheckedByZero {
     private final int verification;
