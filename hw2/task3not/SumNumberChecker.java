@@ -1,4 +1,4 @@
-package hw2.task3;
+package hw2.task3not;
 
 public class SumNumberChecker {
     private int minVerificationSum;
