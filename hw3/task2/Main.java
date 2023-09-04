@@ -4,13 +4,13 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
-        FileManager fileManager = new FileManager();
+        fileManager fileManager = new fileManager();
 
 
 
         try {
-            String content = fileManager.read("/Users/aleksandrharlampov/IdeaProjects/exceptions/hw3/task2/test.txt");
-            System.out.println(content);
+            fileManager.readTask(
+                    "/Users/aleksandrharlampov/IdeaProjects/exceptions/hw3/task2/test.txt");
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден: " + e.getMessage());
         } catch (IOException e) {
@@ -21,7 +21,8 @@ public class Main {
 
         try {
             String content = "Этот текст будет записан в файл.";
-            fileManager.write("/Users/aleksandrharlampov/IdeaProjects/exceptions/hw3/task2/test.txt", content);
+            fileManager.writeTask(
+                    "/Users/aleksandrharlampov/IdeaProjects/exceptions/hw3/task2/test.txt", content);
             System.out.println("Записано успешно");
         } catch (IOException e) {
             System.out.println("Ошибка записи файла: " + e.getMessage());
@@ -30,7 +31,7 @@ public class Main {
 
 
         try {
-            fileManager.copy(
+            fileManager.copyTask(
                     "/Users/aleksandrharlampov/IdeaProjects/exceptions/hw3/task2/test2.txt",
                     "/Users/aleksandrharlampov/IdeaProjects/exceptions/hw3/task2/test.txt");
             System.out.println("Файл скопирован");
